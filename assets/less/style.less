@@ -6,7 +6,7 @@
 @import "preboot.less";
 
 body {
-	background-color: #eee;
+	background-color: #f9f9f9;
 }
 
 .row {
@@ -19,7 +19,42 @@ body {
 	.clearfix();
 }
 
+.yuhu {
+	#gradient > .vertical(#fff1dd, #ffe7c3);
+}
+
+.top-section {
+	padding-top: 20px;
+
+	&:after {
+		content: "";
+		display: block;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background: url(/assets/img/confetti-pattern.png) center center transparent;
+	}
+}
+
+.top-banner {
+	width: 500px;
+	margin-bottom: 30px;
+
+	.center-block();
+}
+
+.main-video-wrapper {
+	width: 700px;
+	padding: 5px;
+	background: #fff;
+	border: 1px solid #eee;
+
+	.center-block();
+}
+
 .thumbnail {
+	margin-top: -10px;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	background: #f9f9f9;
@@ -29,15 +64,17 @@ body {
 }
 
 .mini-vid {
-	padding: 6px;
+	padding: 3px;
 	border: 1px solid #e9e9e9;
 	min-height: 20px;
 	width: 24%;
 	float: left;
+	margin-top: 4px;
+	padding-bottom: 4px;
 	margin-left: 1%;
 	.box-sizing(border-box);
 
-	&:first-child {
+	&:nth-child(4n+1) {
 		margin-left: 0;
 	}
 }
